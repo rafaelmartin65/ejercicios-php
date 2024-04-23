@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/9afaeb48c9.js" crossorigin="anonymous"></script>
     <?php include_once "componentes/encabezado.php"?>
     <div id="cuerpo">
-        <?php include "cuerpo.php"; ?>
+        <?php include "formulario.php"; ?>
     </div>
     <?php include_once "componentes/pie.php"?>
 </body>
