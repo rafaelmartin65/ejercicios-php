@@ -16,7 +16,7 @@
          </form>
 
           <ul>
-            <li><i class="fa-solid fa-heart fa-xl"></i></li>
+            <li><a href="./index.php"><i class="fa-solid fa-home fa-xl"></i></a></li>
             <li><i class="fa-solid fa-cart-shopping fa-lg"></i></li>
             <li><i class="fa-regular fa-circle-user fa-xl"></i></li>
           </ul>

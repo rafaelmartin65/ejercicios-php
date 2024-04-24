@@ -31,6 +31,7 @@ function cargaAlumno(perfil){
     let elementomodificar = document.createElement("li");
     let modificar = document.createElement("i");
     modificar.classList.add("fa-solid","fa-pencil","fa-lg","btn");
+    modificar.id = perfil.id;
     modificar.onclick = fmodificar;
     let elementoeliminar = document.createElement("li");
     let eliminar = document.createElement("i");
@@ -49,10 +50,17 @@ function cargaAlumno(perfil){
     fila.appendChild(colFoto);
     fila.appendChild(colIconos);
     document.getElementById("contenedor").appendChild(fila);
+}
 
+function fmodificar(event){
+    fetch("formulario.php")
+    .then(respuesta => respuesta.text())
+    .then(lineasFormulario => {
+        document.getElementById("cuerpo").innerHTML =  lineasFormulario;
+        document.getElementById("id").value = event.target.id;
+    })
+}    
     
-}
-
-function fmodificar(){
-    document.getElementById("cuerpo").innerHTML =  '<?php include "formulario.php"; ?>';
-}
+document.getElementById("botonAceptar").addEventListener("submit",(event) => {
+    console.log("Submit de formulario");
+})
