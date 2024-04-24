@@ -5,19 +5,19 @@
         $file_tmp = $_FILES['image']['tmp_name'];
         $file_type = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
 
-        // Validate file type
+        // Validación por tipo de fichero
         if ($file_type != "jpg" && $file_type != "png" && $file_type != "jpeg" && $file_type != "gif") {
             echo "Tipo de fichero invalido. Solo se aceptan JPG, JPEG, PNG y  GIF";
             exit;
         }
 
-        // Validate file size
+        // Validación por tamaño de fichero
         if ($file_size > 1000000) {
             echo "Fichero demasiado grande, el hosting no acepta ficheros de mas de 1 Mb";
             exit;
         }
 
-        // Move the uploaded file to a specific folder
+        // Movemos el fichero a una carpeta determinada
         $destination_folder = "uploads/";
         if (!file_exists($destination_folder)) {
             mkdir($destination_folder, 0777, true);

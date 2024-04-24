@@ -5,13 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js"></script>
+    <!-- Link BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <form action="upload.php" method="post" enctype="multipart/form-data">
-        <p>Seleccionar imagen</p>
-        <img id="foto" width="200px" src="./fotos/nofoto.webp" alt="" >
-        <input id="imagen_fichero" type="file" name="image"onchange="cargafoto()" />
-        <input type="submit" name="submit" value="UPLOAD"/>
+        <div class="d-flex justify-content-center gap-3">
+            <div class="d-flex flex-column">
+                <img id="foto" width="200px" src="./fotos/nofoto.webp" alt="" >
+                <input id="imagen_fichero" type="file" name="image"onchange="cargafoto()" />
+                <input type="submit" name="submit" value="UPLOAD"/>
+            </div>    
+            <div class="d-flex flex-column">
+                <div class="my-2">
+                    <label for="id">Id:</label>
+                    <input id="id" type="text">
+                </div>
+                <div class="my-2">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text">
+                </div>
+                <div class="my-2">
+                    <label for="apellidos">Apellidos:</label>
+                    <input id="apellidos" type="text">
+                </div>
+                <div class="my-2">
+                    <label for="email">Email:</label>
+                    <input id="email" type="text">
+                </div>
+                <div class="my-2">
+                    <label for="telefono">Telefono:</label>
+                    <input id="telefono" type="text">
+                </div>
+                <div class="my-2">
+                    <label for="web">WEB:</label>
+                    <input id="web" type="text">
+                </div>
+                <div class="d-flex justify-content-around">
+                    <input id="botonAceptar" type="button" value="Aceptar">
+                    <input type="reset" value="Cancelar">
+                </div>
+            </div>
+        </div>
     </form>
 </body>
 </html>
