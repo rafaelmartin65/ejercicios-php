@@ -11,7 +11,7 @@ document.getElementById("formulario").addEventListener("submit",(event) =>{
         console.log(pair[0]+ ' : ' + pair[1]); 
     }
     fetch("upload.php")
-    .then(response => response.json())
+    .then(response => response.text())
     .then(datos => {
         console.log(datos);
     })
