@@ -5,13 +5,22 @@ function cargafoto(){
 document.getElementById("formulario").addEventListener("submit",(event) =>{
     event.preventDefault();
     const formulario = document.getElementById('formulario');
-    console.log(typeof formulario);
     const formData = new FormData(formulario)
     const formDataJson = Object.fromEntries(formData.entries());
+    
     console.log(formDataJson)
-    fetch("upload.php")
+
+    const fetchOptions = {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        },
+        body: formData,
+    };
+
+    fetch("upload.php", fetchOptions)
     .then(response => response.text())
     .then(datos => {
-        console.log(datos);
+        alert(datos);
     })
 })

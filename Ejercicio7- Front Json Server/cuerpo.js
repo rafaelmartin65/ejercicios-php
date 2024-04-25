@@ -58,6 +58,19 @@ function fmodificar(event){
     .then(lineasFormulario => {
         document.getElementById("cuerpo").innerHTML =  lineasFormulario;
         document.getElementById("id").value = event.target.id;
+        fetch("http://localhost:3000/alumnos/"+event.target.id)
+        .then(response => response.json())
+        .then(fichaAlumno => {
+            document.getElementById("nombre").value = fichaAlumno.nombre;
+            document.getElementById("apellidos").value = fichaAlumno.apellidos;
+            document.getElementById("telefono").value = fichaAlumno.telefono;
+            document.getElementById("email").value = fichaAlumno.email;
+            document.getElementById("web").value = fichaAlumno.web;
+            // console.log(fichaAlumno);
+        });
+        let script = document.createElement("script");
+        script.src = "formulario.js";
+        document.head.appendChild(script);
     })
 }    
     

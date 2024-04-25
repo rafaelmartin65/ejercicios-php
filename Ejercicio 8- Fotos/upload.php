@@ -1,8 +1,11 @@
 <?php
-    if (isset($_FILES['image'])) {
-        $file_name = $_FILES['image']['name'];
-        $file_size = $_FILES['image']['size'];
-        $file_tmp = $_FILES['image']['tmp_name'];
+    $datos = json_decode(file_get_contents("php://input"), true);
+    var_dump($datos['image']);
+    var_dump($_POST);
+    if (isset($datos['image'])) {
+        $file_name = $datos['image']['name'];
+        $file_size = $datos['image']['size'];
+        $file_tmp = $datos['image']['tmp_name'];
         $file_type = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
 
         // Validación por tipo de fichero
