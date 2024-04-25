@@ -100,7 +100,6 @@ function fmodificar(event){
             document.getElementById("telefono").value = fichaAlumno.telefono;
             document.getElementById("email").value = fichaAlumno.email;
             document.getElementById("web").value = fichaAlumno.web;
-            // console.log(fichaAlumno);
         });
         let script = document.createElement("script");
         script.src = "formulario.js";
@@ -108,6 +107,16 @@ function fmodificar(event){
     })
 }    
     
-document.getElementById("nuevo").addEventListener("click",() =>{
+document.getElementById("nuevo").addEventListener("click",(event) =>{
     console.log(ultimo);
+    fetch("formulario.php")
+    .then(respuesta => respuesta.text())
+    .then(lineasFormulario => {
+        document.getElementById("cuerpo").innerHTML =  lineasFormulario;
+        document.getElementById("id").value = ultimo + 1;
+        document.getElementById("id").disabled;
+        let script = document.createElement("script");
+        script.src = "formulario.js";
+        document.head.appendChild(script);
+    })
 })
