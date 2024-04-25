@@ -1,7 +1,9 @@
+let ultimo = 0;
 fetch("http://localhost:3000/alumnos")
 .then(response => response.json())
 .then(datos => {
     datos.forEach(elemento => {
+        if (parseInt(elemento.id) > ultimo) ultimo =  parseInt(elemento.id);
         cargaAlumno(elemento);     
     });
 })
@@ -19,9 +21,47 @@ function cargaAlumno(perfil){
     foto.src = "./fotos/"+perfil.nombre +".jpg";
     foto.onerror = () => {foto.src = "./fotos/nofoto.webp"};
     foto.style.width = "80px";
-    foto.classList.add("rounded-circle");
+    foto.classList.add("rounded-circle","m-2");
 
+    colFoto.appendChild(foto);
+    fila.appendChild(colFoto);
     
+
+    colFoto.appendChild(foto);
+    let colNombre = document.createElement("div");
+    colNombre.classList.add("col");
+    let nombre = document.createElement("p");
+    nombre.innerHTML = perfil.nombre;
+    colNombre.appendChild(nombre);
+    fila.appendChild(colNombre);
+
+    let colApellidos = document.createElement("div");
+    colApellidos.classList.add("col");
+    let apellidos = document.createElement("p");
+    apellidos.innerHTML = perfil.apellidos;
+    colApellidos.appendChild(apellidos);
+    fila.appendChild(colApellidos);
+
+    let colEmail = document.createElement("div");
+    colEmail.classList.add("col");
+    let email = document.createElement("p");
+    email.innerHTML = perfil.email;
+    colEmail.appendChild(email);
+    fila.appendChild(colEmail);
+
+    let colTelefono = document.createElement("div");
+    colTelefono.classList.add("col");
+    let telefono = document.createElement("p");
+    telefono.innerHTML = perfil.telefono;
+    colTelefono.appendChild(telefono);
+    fila.appendChild(colTelefono);
+    
+    let colWeb = document.createElement("div");
+    colWeb.classList.add("col");
+    let web = document.createElement("p");
+    web.innerHTML = perfil.web;
+    colWeb.appendChild(web);
+    fila.appendChild(colWeb);
 
     // Agregamos los iconos
     let colIconos = document.createElement("div");
@@ -41,14 +81,8 @@ function cargaAlumno(perfil){
     lista.appendChild(elementomodificar);
     lista.appendChild(elementoeliminar);
     colIconos.appendChild(lista);
-
-    colFoto.appendChild(foto);
-    fila.appendChild(colFoto);
-    fila.appendChild(colFoto);
-    fila.appendChild(colFoto);
-    fila.appendChild(colFoto);
-    fila.appendChild(colFoto);
     fila.appendChild(colIconos);
+
     document.getElementById("contenedor").appendChild(fila);
 }
 
@@ -74,6 +108,6 @@ function fmodificar(event){
     })
 }    
     
-document.getElementById("botonAceptar").addEventListener("submit",(event) => {
-    console.log("Submit de formulario");
+document.getElementById("nuevo").addEventListener("click",() =>{
+    console.log(ultimo);
 })

@@ -17,8 +17,7 @@
 
           <ul>
             <li><a href="./index.php"><i class="fa-solid fa-home fa-xl"></i></a></li>
-            <li><i class="fa-solid fa-cart-shopping fa-lg"></i></li>
-            <li><i class="fa-regular fa-circle-user fa-xl"></i></li>
+            <li><i id="nuevo" class="fa-solid fa-user-plus fa-xl btn"></i></li>
           </ul>
         </div>
     </nav>

@@ -20,6 +20,7 @@ document.getElementById("botonAceptar").addEventListener("click", () => {
     .then(response => response.text())
     .then(data => {
         console.log('Respuesta del servidor:', data);
+        location.href ="./index.php";
     })
     .catch(error => {
         console.error('Error:', error);
