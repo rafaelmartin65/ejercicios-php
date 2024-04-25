@@ -1,15 +1,14 @@
 function cargafoto(){
-    document.getElementById('foto').src = 
-    window.URL.createObjectURL(document.getElementById("imagen_fichero").files[0]);
-    // document.getElementById('nombre_foto').innerHTML = document.getElementById("imagen_fichero").files[0].name;
+    document.getElementById('foto').src =  window.URL.createObjectURL(document.getElementById("imagen_fichero").files[0]);
 }
 
 document.getElementById("formulario").addEventListener("submit",(event) =>{
     event.preventDefault();
+    const formulario = document.getElementById('formulario');
+    console.log(typeof formulario);
     const formData = new FormData(formulario)
-    for (let pair of formData.entries()) {
-        console.log(pair[0]+ ' : ' + pair[1]); 
-    }
+    const formDataJson = Object.fromEntries(formData.entries());
+    console.log(formDataJson)
     fetch("upload.php")
     .then(response => response.text())
     .then(datos => {
