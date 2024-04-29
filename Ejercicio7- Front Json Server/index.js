@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/alumnos")
+fetch("http://localhost:3000/casas")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((element) => {

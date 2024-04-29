@@ -1,0 +1,64 @@
+/* Ventana modal */
+.flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rbg(0,0,0,0.450);
+}
+
+.contenido-modal {
+    position: relative;
+    width: 20%;
+    height: 10%;
+    box-shadow: 0 0 8px 0 red;
+    animation-name: modal;
+    animation-duration: 1s; 
+}
+
+@keyframes modal {
+    from{top: -330px;opacity: 0;}
+    to{top:0; opacity:1;}
+}
+
+.close {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header, .modal-footer, .modal-body {
+    padding: 8px 16px;
+    background-color: grey;
+    color: white;
+}
+
+.modal-header, .modal-body {
+    align-items: center;    
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+}
+#botones-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

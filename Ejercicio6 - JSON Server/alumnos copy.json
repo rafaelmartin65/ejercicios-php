@@ -1,39 +1,39 @@
-{
-  "alumnos": [
+[
     {
-      "nuevaFoto": {},
-      "id": "3",
+      "id": "1",
       "nombre": "ANGEL DOMINGO",
       "apellidos": "ARBELO PLASENCIA",
       "email": "",
-      "telefono": "1234",
-      "web": ""
+      "telefono": "",
+      "web": "",
+      "imagen": "angel.jpg"
     },
     {
-      "id": "20",
+      "id": "2",
       "nombre": "DAVID",
       "apellidos": "CAMACHO DIAZ",
       "email": "",
-      "telefono": "6777",
-      "web": ""
+      "telefono": "",
+      "web": "",
+      "imagen": "david.jpg"
     },
     {
-      "nuevaFoto": {},
-      "id": "4",
+      "id": "3",
       "nombre": "EDUARDO",
       "apellidos": "DIAZ PEREZ",
       "email": "",
-      "telefono": "4444444",
-      "web": "123123123"
+      "telefono": "",
+      "web": "",
+      "imagen": "notiene.jpg"
     },
     {
-      "nuevaFoto": {},
-      "id": "26",
+      "id": "4",
       "nombre": "VICTOR",
       "apellidos": "CARRERO LEON",
       "email": "",
-      "telefono": "111111",
-      "web": ""
+      "telefono": "",
+      "web": "",
+      "imagen": "notiene.jpg"
     },
     {
       "id": "5",
@@ -142,6 +142,22 @@
       "telefono": "566-66-66-6",
       "web": "http://www.tenerifesystem.com",
       "imagen": "Dardo.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "EDUARDO",
+      "apellidos": "DIAZ PEREZ",
+      "email": "",
+      "telefono": "666666666",
+      "web": "",
+      "imagen": "notiene.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "EDUARDO",
+      "apellidos": "DIAZ PEREZ",
+      "telefono": "666666666",
+      "web": "",
+      "imagen": "notiene.jpg"
     }
   ]
-}

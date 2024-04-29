@@ -1,0 +1,100 @@
+* {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(228, 224, 224);
+    height: 22vh;
+    width: 100%;
+    /* background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("../logos/pokeball.png");
+    background-repeat: repeat-x;
+    background-size: 152px 152px; */
+    /* border: 1px solid green; */
+}
+
+#logoEmpresa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid purple; */
+}
+
+#logo {
+    width: 80%;
+    height: 100%;
+    max-width: 300px;
+    /* border: 1px solid blue; */
+}
+
+nav {
+    width: 60%;
+    /* border: 1px solid purple; */
+    height: 20%;
+    background-color: rgb(114, 110, 110);
+    color: white;
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+ul li:hover{
+    background-color: rgb(124, 122, 122);
+}
+
+ul li:hover a{
+color: white;
+}
+
+ul li a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 400px) {
+    nav {
+        width: 80%; 
+    }
+   
+}
+
+@media (max-width: 370px) {
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        width: 80%; 
+    }
+   
+}
