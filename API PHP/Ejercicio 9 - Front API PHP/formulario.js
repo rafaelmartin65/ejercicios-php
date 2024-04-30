@@ -10,12 +10,12 @@ document.getElementById("botonAceptar").addEventListener("click", () => {
     const fetchOptions = {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "multipart/form-data",
       },
       body: JSON.stringify(formDataJson),
     };
     // Enviar la solicitud fetch al servidor JSON
-    fetch("http://localhost:3000/alumnos", fetchOptions)
+    fetch("http://localhost/ejercicios/API%20PHP/Ejercicio%2010%20-%20API", fetchOptions)
       .then((response) => response.text())
       .then((data) => {
         console.log("Respuesta del servidor:", data);
@@ -27,7 +27,7 @@ document.getElementById("botonAceptar").addEventListener("click", () => {
           .then((devuelve) => {
             console.log(devuelve);
           });
-        location.href ="./index.php";
+        // location.href ="./index.php";
       })
       .catch((error) => {
         console.error("Error:", error);

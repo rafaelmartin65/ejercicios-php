@@ -1,5 +1,6 @@
 <?php
 include "db_connection.php";
+var_dump($_SERVER['REQUEST_METHOD']);
 
 switch ($_SERVER['REQUEST_METHOD']) {
         // Entramos por peticion de registros con GET
@@ -38,6 +39,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $stm->bindParam(':web' , $_POST["web"]); 
             $stm->bindParam(':imagen' , $_POST["imagen"]); 
             echo $stm->execute();
+            
         };
         break;
 }
