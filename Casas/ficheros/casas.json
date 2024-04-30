@@ -1,0 +1,162 @@
+[
+    {
+      "id": 1,
+      "descripcion": "Casa familiar",
+      "año" : 2010,
+      "garaje":"para dos coches",
+      "dormitorios": "3",
+      "baños": "2",
+      "superficie": 430,
+       "precio": 240000
+    },
+    {
+      "id": 2,
+      "descripcion": "Casa moderna",
+      "año" : 2015,
+      "garaje":"si",
+      "dormitorios": "2",
+      "baños": "2",
+      "superficie": 320,
+       "precio": 180000
+    },
+    {
+      "id": 3,
+      "descripcion": "Casa rustica",
+      "año" : 1980,
+      "garaje":"no",
+      "dormitorios": "2",
+      "baños": "2",
+      "superficie": 310,
+       "precio": 120000
+    },
+    {
+      "id": 4,
+      "descripcion": "Casa de dos plantas con piscina",
+      "año" : 2005,
+      "garaje":"no",
+      "dormitorios": "4",
+      "baños": "3",
+      "superficie": 350,
+       "precio": 350000
+    },
+    {
+      "id": 5,
+      "descripcion": "Casa moderna con ventanales y piscina",
+      "año" : 2005,
+      "garaje":"no",
+      "dormitorios": "2",
+      "baños": "2",
+      "superficie": 450,
+       "precio": 380000
+    },
+    {
+      "id": 6,
+      "descripcion": "Casa moderna con piscina",
+      "año" : 2010,
+      "garaje":"para dos coches",
+      "dormitorios": "2",
+      "baños": "2",
+      "superficie": 250,
+       "precio": 210000
+    },
+    {
+      "id": 7,
+      "descripcion": "Casa prefabricada de madera en una planta",
+      "año" : 2015,
+      "garaje":"no",
+      "dormitorios": "3",
+      "baños": "2",
+      "superficie": 240,
+       "precio": 145000
+    },
+    {
+      "id": 8,
+      "descripcion": "Casa rustica",
+      "año" : 2001,
+      "garaje":"no",
+      "dormitorios": "2",
+      "baños": "2",
+      "superficie": 250,
+       "precio": 145000
+    },
+    {
+      "id": 9,
+      "descripcion": "Casa señorial de dos plantas con piscina",
+      "año" : 2005,
+      "garaje":"aparcamiento techado para dos coches",
+      "dormitorios": "3",
+      "baños": "3",
+      "superficie": 350,
+       "precio": 380000
+    },
+    {
+      "id": 10,
+      "descripcion": "Mansión con piscina",
+      "año" : 2010,
+      "garaje":"para 4 coches",
+      "dormitorios": "5",
+      "baños": "4",
+      "superficie": 1520,
+       "precio": 1520000
+    },
+    {
+      "id": 11,
+      "descripcion": "Casita rústica estilo alpino",
+      "año" : 2015,
+      "garaje":"no",
+      "dormitorios": "2",
+      "baños": "2",
+      "superficie": 160,
+       "precio": 165000
+    },
+    {
+      "id": 12,
+      "descripcion": "Casa tradicional de dos plantas",
+      "año" : 1980,
+      "garaje":"no",
+      "dormitorios": "4",
+      "baños": "2",
+      "superficie": 320,
+       "precio": 215000
+    },
+    {
+      "id": 13,
+      "descripcion": "Casa rustica en una planta con jardines",
+      "año" : 1990,
+      "garaje":"no",
+      "dormitorios": "3",
+      "baños": "2",
+      "superficie": 260,
+       "precio": 240000
+    },
+    {
+      "id": 14,
+      "descripcion": "Casa estilo andaluz",
+      "año" : 2005,
+      "garaje":"no",
+      "dormitorios": "2",
+      "baños": "1",
+      "superficie": 160,
+       "precio": 190000
+    },
+    {
+      "id": 15,
+      "descripcion": "Mansión de tres plantas con piscina",
+      "año" : 2010,
+      "garaje":"para 4 coches",
+      "dormitorios": "5",
+      "baños": "4",
+      "superficie": 1250,
+       "precio": 980000
+    },
+    {
+      "id": 16,
+      "descripcion": "Casa estilo alpino de dos plantas",
+      "año" : 2013,
+      "garaje":"no",
+      "dormitorios": "2",
+      "baños": "2",
+      "superficie": 180,
+       "precio": 210000
+    }
+]
