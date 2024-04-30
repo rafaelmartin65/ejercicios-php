@@ -1,5 +1,7 @@
 <?php
 include "db_connection.php";
+
+// $data = json_decode(file_get_contents('php://input'), true);
 var_dump($_SERVER['REQUEST_METHOD']);
 
 switch ($_SERVER['REQUEST_METHOD']) {

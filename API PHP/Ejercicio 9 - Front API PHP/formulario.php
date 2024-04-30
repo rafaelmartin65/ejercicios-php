@@ -1,4 +1,4 @@
-<form id="formularioMantenimiento" action="" class="d-flex justify-content-center gap-3" enctype="multipart/form-data">
+<form id="formularioMantenimiento" action="" method="post" class="d-flex justify-content-center gap-3" enctype="multipart/form-data">
     <div class="d-flex flex-column">
         <img id="foto" width="250px" onerror="this.src='./fotos/nofoto.webp';" src="" alt="">
         <input type="file" name="nuevaFoto" id="nuevaFoto" onchange="cargafoto()">
